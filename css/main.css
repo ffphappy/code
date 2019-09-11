@@ -63,13 +63,15 @@ input:focus{
   margin: 0 auto;
   max-width: 1200px;
 }
-.main-content{
+.main-center-content{
   display: flex;
   padding: 0 2rem;
+  flex-wrap: wrap;
 }
 .title-content{
   flex: 1;
   margin-right: 5px;
+  z-index: 1;
 }
 .img-content{
   margin-left: 5px;
@@ -77,6 +79,15 @@ input:focus{
   max-height: 410px;
   background: #4c4f5a 4.26%;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+.background-img{
+  width:600px;
+}
+.background-img img{
+  height: 100%;
+  width: 100%;
 }
  .title-content h1{
   font-family: 'Telefon Black', Sans-Serif;
@@ -103,9 +114,6 @@ input:focus{
   font-weight: bold;
   line-height: 1.2;
   font-size: 1.3rem;
-}
-.img-content{
-  position: relative;
 }
 .html-modal{
   box-sizing: border-box;
@@ -155,6 +163,6 @@ color: #e1ca72;
 .color-04{
   color: #74b087;
 }
-.css-modal p{
+.css-modalp{
   margin: 0;
 }
