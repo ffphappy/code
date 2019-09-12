@@ -8,14 +8,18 @@
   width: 90%;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 75px;
+  margin-bottom: 70px;
 }
 .title-content{
   margin: 0 auto;
   width: 90%;
 }
 .background-img{
-  bottom:0px;
+ top: 350px;
+}
+.background-img img{
+  width: 100%;
+  height: 100%;
 }
 .html-modal{
   position: absolute;

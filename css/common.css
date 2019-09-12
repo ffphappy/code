@@ -1,0 +1,18 @@
+/*公共样式*/
+html{
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #131418;
+  height: 100%;
+}
+.codePen-wrapper{
+  display: flex;
+  height: 100%;
+}

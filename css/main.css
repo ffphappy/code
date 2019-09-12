@@ -1,9 +1,9 @@
 /*首页内容css*/
 .main{
-  width: 100%;
+  width:calc(100% - 188px);
+  margin-left: 188px;
 }
 .main-header{
-  widows: 100%;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -62,11 +62,11 @@ input:focus{
   padding: 45px 0;
   margin: 0 auto;
   max-width: 1200px;
+  position: relative;
 }
 .main-center-content{
   display: flex;
   padding: 0 2rem;
-  flex-wrap: wrap;
 }
 .title-content{
   flex: 1;
@@ -84,6 +84,9 @@ input:focus{
 }
 .background-img{
   width:600px;
+  position: absolute;
+  right: -90px;
+  top: 420px;
 }
 .background-img img{
   height: 100%;
@@ -165,4 +168,85 @@ color: #e1ca72;
 }
 .css-modalp{
   margin: 0;
+}
+/* 三个小方块的内容*/
+.select-wrapper{
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.select-01,
+.select-02,
+.select-03
+{
+  background: #2d303a;
+  border-radius: 10Px;
+  padding: 1.5rem 1.5rem 2rem;
+  box-sizing: border-box;
+  max-width: 360px;
+  z-index: 1;
+  margin: 2rem 0;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+.select-01 h1,
+.select-02 h1,
+.select-03 h1{
+  margin: 0;
+}
+.select-icon01{
+  width: 75px;
+  height: 75px;
+  background: #131418;
+  position: absolute;
+  top: -40px;
+  box-sizing: border-box;
+  padding: 12px 10px 0;
+  border-radius: 10%;
+}
+.select-icon01 img{
+  width: 100%;
+  height: 100%;
+}
+.btn-a{
+  padding: 10px 16px;
+  background: #444857;
+  border-radius: 4%;
+  flex-grow:0;
+}
+.common-margin{
+  height: 20px;
+}
+.backgroun-img-02{
+  position: relative;
+  left: -500px;
+  top: -40px;
+  max-width:400px;
+}
+.backgroun-img-02 img{
+  width: 100%;
+  height: auto;
+}
+/*六个方框内容*/
+.main-content-bottom{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+  grid-auto-rows: repeat(2);
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-gap:4rem 3rem;
+}
+.bottom-01{
+  
+}
+.bottom-wrapper{
+  background:#202229 ;
+  border-radius: 10%;
 }
